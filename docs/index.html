@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<title>A selection of Progressive Web Apps</title>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="A handful of nice examples showcasing what Progressive Web Apps can look like.">
@@ -15,8 +13,7 @@
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" type="image/png" sizes="228x228" href="images/icon-228x228.png">
 	<link rel="apple-touch-icon" type="image/png" href="images/icon-228x228.png">
-	<link rel="canonical" href="https://pearcee.github.io">
-	 <meta name="theme-color" content="#317EFB"/>
+	<meta name="theme-color" content="#317EFB"/>
 
 </head>
 <body class="page">
@@ -1095,6 +1092,11 @@
 	</footer>
 
 	<script src="script.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('service-worker.js');
+		}
+	</script>
 	
 
 </body>
